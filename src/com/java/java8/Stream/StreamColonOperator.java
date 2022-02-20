@@ -12,7 +12,5 @@ public class StreamColonOperator {
         List<String> strList = alphaNumerics.stream().map(String::toUpperCase).filter(e -> e.startsWith("A")).collect(Collectors.toList());
         System.out.println(strList);
 
-        List<String> str = alphaNumerics.stream().map(String :: toUpperCase).filter(e -> e.startsWith("A")).collect(Collectors.toList());
-        System.out.println(str);
     }
 }
