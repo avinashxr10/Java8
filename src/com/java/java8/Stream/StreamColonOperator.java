@@ -1,9 +1,7 @@
 package com.java.java8.Stream;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Collectors;
 
 public class StreamColonOperator {
