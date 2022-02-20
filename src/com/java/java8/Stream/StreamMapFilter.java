@@ -14,10 +14,18 @@ public class StreamMapFilter {
         fruits.add("Papaya");
         fruits.add("Grapes");
 
-        //find only those fruits whose length is greater than 5
+        //print length of every fruits
         System.out.println( fruits.stream().map(f -> f.length()).collect(Collectors.toList()));
+
+        //find only those fruits whose length is greater than 5
         System.out.println( fruits.stream().filter(f -> f.length() > 5).collect(Collectors.toList()));
 
+        //find fruits whose length is greater than 5
+        System.out.println( fruits.stream().filter(f -> f.length() > 5).map(f -> f.length()).collect(Collectors.toList()));
+
+        //How many fruits exist that have length greater than 5
+       Long numbers = fruits.stream().filter(f -> f.length() > 5).count();
+        System.out.println(numbers);
 
     }
 }
