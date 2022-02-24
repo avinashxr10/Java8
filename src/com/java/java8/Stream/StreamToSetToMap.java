@@ -12,10 +12,10 @@ public class StreamToSetToMap {
         numSet.add(7);
         numSet.add(9);
 
-        Set<Integer> filteredSet =  numSet.stream().filter(a -> a > 2).collect(toSet());
+        Set<Integer> filteredSet =  numSet.stream().filter(a -> a > 3).collect(toSet());
         System.out.println(filteredSet);
 
-        Map<Integer,Integer> newMap = numSet.stream().collect(toMap(x -> x , y -> y*100));
+        Map<Integer,Integer> newMap = numSet.stream().collect(toMap(x -> x , y -> y * 100));
         System.out.println(newMap);
     }
 }
